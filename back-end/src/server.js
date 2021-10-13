@@ -30,7 +30,7 @@ app.post('/api/calculate', (req, res) => {
       }
     }
 
-    if (found.length === 2) {
+    if (found.length < 3) {
       const now = performance.now()
 
       const result = `${num} x ${i} = ${resultado}, o resultado demorou ${now - before}ms para ser encontrado.`
